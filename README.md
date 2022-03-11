@@ -13,4 +13,4 @@ pip install mechanize
 pip install bs4 
 git clone https://github.com/James404-cyber/DUM-ID.git
 cd DUM-ID
-python Dump.py
+python Doubled.py
