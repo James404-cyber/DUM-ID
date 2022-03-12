@@ -10,5 +10,5 @@ if bit == '64bit':
     from Dumping import menu
     menu()
 elif bit == '32bit':
-    from Dumoing import menu
+    from Dumping import menu
     menu()
