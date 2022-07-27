@@ -1,14 +1,28 @@
-import os, platform
-try:
-   import requests
-except:
-   os.system('pip2 install requests')
-   os.system('pip2 install bs4')
-import requests
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from Dumping import menu
-    menu()
-elif bit == '32bit':
-    from Dumping import menu
-    menu()
+
+import platform
+import os
+os.system('termux-setup-storage')
+os.system('git pull')
+try:os.system('touch .prox.txt')
+except:pass
+try:os.system('touch .proxy.txt')
+except:pass
+arc = str(platform.uname().machine)
+if 'arm' in arc:
+	__import__("latter")._site_view_()
+elif 'aarch' in arc:
+	__import__("Dump").main()
+else:
+	exit(f' Unknow device machine {arc}')
+
+
+
+
+
+
+
+
+
+
+
+
